@@ -1,0 +1,18 @@
+class Aircraft:
+	def __init__(self, weight):
+		self._weight = weight
+
+class UAV:
+	def __init__(self):
+		self._has_autopilot = True
+        self._missions = [[],[]]
+    # напишите код для декоратора атрибута _missions
+    @property
+    def missions(self):
+        return print(missions)
+    @missions.setter
+    def missions(self, lst):
+        self._missions.append(lst)
+	# напишите публичный метод count_missions
+	def count_missions(self):
+        return len(self._missions)
